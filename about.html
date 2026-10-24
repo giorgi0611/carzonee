@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="left-side">
+        <h1 style="font-style: italic">
+          CAR<span style="color: aqua">ZONE</span>
+        </h1>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="favorites.html"
+              >Favorites (<span id="favorites-count">0</span>)</a
+            >
+          </li>
+          <li>
+            <a href="./cart.html" id="cart-toggle"
+              >cart(<span id="cart-count">0</span>)</a
+            >
+          </li>
+          <li><a href="./checkout.html">Checkout</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <div class="dark-light">
+          <button
+            onclick="showdark()"
+            class="switch dark"
+            aria-label="Dark mode"
+          >
+            <span class="moon">☾</span> <span class="circle"></span>
+          </button>
+          <button
+            onclick="showlight()"
+            class="switch light"
+            aria-label="Light mode"
+          >
+            <span class="sun">☀</span> <span class="circle"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="left">
+        <h1>WHY <span style="color: aqua">CARZONE?</span></h1>
+        <p><i class="fa-solid fa-car"></i>✓ 500+ Cars</p>
+        <p><i class="fa-solid fa-shield-halved"></i>✓ Trusted Sellers</p>
+        <p><i class="fa-solid fa-lock"></i>✓ Secure Purchase</p>
+        <p><i class="fa-solid fa-headset"></i>✓ Fast Support</p>
+      </div>
+      <div class="right">
+        <h1>CARZONE <span>STATISTICS</span></h1>
+        <div class="statistics">
+            <div class="cars"><i class="fa-solid fa-car"></i><p class="stat-number" data-target="500">0</p><p>Cars</p></div>
+        <div class="customers"><i class="fa-solid fa-users"></i><p class="stat-number" data-target="1200">0</p><p>Customers</p></div>
+        <div class="brands"><i class="fa-solid fa-star"></i><p class="stat-number" data-target="15">0</p><p>Brands</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./about.js" defer></script>
+  </body>
+</html>

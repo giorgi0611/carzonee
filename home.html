@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <h1 style="font-style: italic;">CAR<span style="color: aqua;">ZONE</span></h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./favorites.html">Favorites (<span id="favorites-count">0</span>)</a></li>
+                <li><a href="./cart.html" id="cart-toggle">cart(<span id="cart-count">0</span>)</a></li>
+                <li><a href="./checkout.html">Checkout</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <div class="dark-light">
+                <button onclick="showdark()" class=" switch dark" aria-label="Dark mode"><span class=" moon">☾</span></button>
+                <button onclick="showlight()" class="switch light" aria-label="Light mode"><span class="sun">☀</span></button>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="first-half">
+            <h1 class="dreamcar">FIND YOUR <span>DREAM CAR</span></h1>
+        <p class="text">Find the perfect car for your lifestyle. Experience unmatched speed, luxury, and technology designed for the modern road.</p>
+        <button class="explore"><a href="search.html">EXPLORE CARS</a></button>
+        </div>
+        <div class="second-half">
+            <img class="porsche" src="images.jpg" alt="">
+
+        </div>
+    </div>
+
+
+    <script src="./home.js"></script>
+</body>
+</html>

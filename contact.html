@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARZONE - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <script src="contact.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="left-side">
+      <h1 class="logo">CAR<span style="color:aqua">ZONE</span></h1>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="favorites.html">Favorites (<span id="favorites-count">0</span>)</a></li>
+        <li><a href="./cart.html" id="cart-toggle">cart(<span id="cart-count">0</span>)</a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="search.html">Search</a></li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <div class="dark-light">
+        <button onclick="showdark()" class="switch dark" aria-label="Dark mode"><span>☾</span></button>
+        <button onclick="showlight()" class="switch light" aria-label="Light mode"><span>☀</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <form id="contact-form">
+      <h2>Send a Message To Us</h2>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send a Message</button>
+    </form>
+  </main>
+  <div id="notification" role="status" aria-live="polite"></div>
+</body>
+</html>
